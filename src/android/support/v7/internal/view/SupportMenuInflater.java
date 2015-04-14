@@ -247,8 +247,12 @@ public class SupportMenuInflater
   }
 }
 
-
-/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
- * Qualified Name:     android.support.v7.internal.view.SupportMenuInflater
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+
+ * Qualified Name:     android.support.v7.internal.view.SupportMenuInflater
+
+ * JD-Core Version:    0.7.0.1
+
  */

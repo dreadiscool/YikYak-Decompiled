@@ -32,9 +32,9 @@ public class EX
     localTreeMap.put("long", localYakkerLocation.getLongitude());
     this.l = new ArrayList();
     this.m = new ArrayList();
-    String str = Im.a("getAreaTops", localTreeMap, localYakkerLocation);
+    String str = UrlHelper.calculateRequestUrl("getAreaTops", localTreeMap, localYakkerLocation);
     zz localzz = new zB().a(str).b();
-    Im.a(true).a(localzz).a(new EY(this, localFragmentActivity));
+    UrlHelper.a(true).a(localzz).a(new EY(this, localFragmentActivity));
   }
   
   public void onCreateOptionsMenu(Menu paramMenu, MenuInflater paramMenuInflater)

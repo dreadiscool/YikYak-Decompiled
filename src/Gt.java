@@ -32,9 +32,9 @@ public class Gt
     localTreeMap.put("long", localYakkerLocation.getLongitude());
     this.l = new ArrayList();
     this.m = new ArrayList();
-    String str = Im.a("getMyRecentYaks", localTreeMap, localYakkerLocation);
+    String str = UrlHelper.calculateRequestUrl("getMyRecentYaks", localTreeMap, localYakkerLocation);
     zz localzz = new zB().a(str).b();
-    Im.a(true).a(localzz).a(new Gu(this, localFragmentActivity));
+    UrlHelper.a(true).a(localzz).a(new Gu(this, localFragmentActivity));
   }
   
   public void c()

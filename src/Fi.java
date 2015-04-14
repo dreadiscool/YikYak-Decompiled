@@ -31,7 +31,7 @@ class Fi
     if ((this.a instanceof SSLPeerUnverifiedException)) {
       if (CR.a("googleAnalytics", "PeekSaved", true))
       {
-        Im.a(true).a(null);
+        UrlHelper.a(true).a(null);
         If.a().b(false);
         this.b.a();
       }
@@ -72,8 +72,12 @@ class Fi
   }
 }
 
-
-/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
- * Qualified Name:     Fi
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+
+ * Qualified Name:     Fi
+
+ * JD-Core Version:    0.7.0.1
+
  */

@@ -17,8 +17,12 @@ class OfflineStore$32
   }
 }
 
-
-/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
- * Qualified Name:     com.parse.OfflineStore.32
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+
+ * Qualified Name:     com.parse.OfflineStore.32
+
+ * JD-Core Version:    0.7.0.1
+
  */

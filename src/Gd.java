@@ -152,7 +152,7 @@ public class Gd
     for (;;)
     {
       zz localzz = new zB().a(str).b();
-      Im.a(false).a(localzz).a(new Gh(this));
+      UrlHelper.a(false).a(localzz).a(new Gh(this));
       return;
       str = str + ApplicationConfig.getYakkerID();
     }
@@ -230,7 +230,7 @@ public class Gd
       }
       zC localzC = zC.a(zt.a("application/json; charset=utf-8"), localJSONObject2.toString());
       zz localzz = new zB().a(localzC).a(str).b();
-      Im.a(false).a(localzz).a(new Gk(this));
+      UrlHelper.a(false).a(localzz).a(new Gk(this));
       break;
       label360:
       i1 = 0;

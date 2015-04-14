@@ -132,14 +132,14 @@ public class SplashScreen
   
   private void g()
   {
-    if (BV.getYakkerID().isEmpty()) {
+    if (ApplicationConfig.getYakkerID().isEmpty()) {
       this.h.b(this.a);
     }
     for (;;)
     {
       return;
-      if (!BV.c()) {
-        YikYak.a(BV.getYakkerID());
+      if (!ApplicationConfig.c()) {
+        YikYak.setParseChannel(ApplicationConfig.getYakkerID());
       }
       d();
     }

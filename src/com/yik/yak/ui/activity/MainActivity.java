@@ -501,7 +501,7 @@ public class MainActivity
         if (paramInt2 != 1) {
           break;
         }
-        ApplicationConfig.b(3);
+        ApplicationConfig.setMessageTrue(3);
         i();
         break;
       } while (paramInt2 == 0);

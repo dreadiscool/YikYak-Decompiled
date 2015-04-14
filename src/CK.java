@@ -404,9 +404,9 @@ public class CK
   
   private void a(String paramString, TreeMap<String, String> paramTreeMap, YakkerLocation paramYakkerLocation)
   {
-    String str = Im.a(CR.f(), paramString, paramTreeMap, paramYakkerLocation);
+    String str = UrlHelper.calculateRequestUrl(CR.f(), paramString, paramTreeMap, paramYakkerLocation);
     zz localzz = new zB().a(str).b();
-    Im.a(true).a(localzz).a(new CL(this));
+    UrlHelper.a(true).a(localzz).a(new CL(this));
   }
   
   public ContentValues a()

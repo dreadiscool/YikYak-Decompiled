@@ -129,10 +129,10 @@ public class If
             localTreeMap.put("long", localCM.f().b());
           }
         }
-        String str1 = Im.b(CR.f(), "logEvent", localTreeMap, localCM.f());
+        String str1 = UrlHelper.b(CR.f(), "logEvent", localTreeMap, localCM.f());
         zC localzC = zC.a(zt.a("application/x-www-form-urlencoded"), (String)localTreeMap.get("RequestBody:body"));
         zz localzz = new zB().a(localzC).a(str1).b();
-        Im.a(true).a(localzz).a(new Ig(this));
+        UrlHelper.a(true).a(localzz).a(new Ig(this));
       }
       catch (Exception localException) {}
     }

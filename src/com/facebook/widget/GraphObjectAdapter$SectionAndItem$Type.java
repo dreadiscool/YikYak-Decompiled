@@ -15,8 +15,12 @@ public enum GraphObjectAdapter$SectionAndItem$Type
   private GraphObjectAdapter$SectionAndItem$Type() {}
 }
 
-
-/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
- * Qualified Name:     com.facebook.widget.GraphObjectAdapter.SectionAndItem.Type
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+
+ * Qualified Name:     com.facebook.widget.GraphObjectAdapter.SectionAndItem.Type
+
+ * JD-Core Version:    0.7.0.1
+
  */

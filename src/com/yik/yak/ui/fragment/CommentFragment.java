@@ -135,9 +135,9 @@ public class CommentFragment
     if (paramBoolean2) {
       localTreeMap.put("block", String.valueOf(paramBoolean2));
     }
-    String str = Im.a(CR.f(), paramString1, localTreeMap, this.n);
+    String str = UrlHelper.calculateRequestUrl(CR.f(), paramString1, localTreeMap, this.n);
     zz localzz = new zB().a(str).b();
-    Im.a(true).a(localzz).a(new Fx(this, paramBoolean1, paramCK, paramBoolean2));
+    UrlHelper.a(true).a(localzz).a(new Fx(this, paramBoolean1, paramCK, paramBoolean2));
   }
   
   private void a(Intent paramIntent)
@@ -225,14 +225,14 @@ public class CommentFragment
         localTreeMap.put("messageID", this.k.b);
         localTreeMap.put("comment", paramString);
         localTreeMap.put("bypassedThreatPopup", String.valueOf(paramInt));
-        String str1 = Im.b(CR.f(), "postComment", localTreeMap, this.n);
+        String str1 = UrlHelper.b(CR.f(), "postComment", localTreeMap, this.n);
         String str2 = (String)localTreeMap.get("RequestBody:body");
         Object[] arrayOfObject = new Object[1];
         arrayOfObject[0] = str2;
         Iq.a(this, arrayOfObject);
         zC localzC = zC.a(zt.a("application/x-www-form-urlencoded"), str2);
         zz localzz = new zB().a(localzC).a(str1).b();
-        Im.a(true).a(localzz).a(new Fp(this));
+        UrlHelper.a(true).a(localzz).a(new Fp(this));
         bool = true;
       }
     }
@@ -347,12 +347,12 @@ public class CommentFragment
       localTreeMap.put("messageID", this.k.b);
       localTreeMap.put("lat", this.n.a());
       localTreeMap.put("long", this.n.b());
-      String str = Im.a("getComments", localTreeMap, this.n);
+      String str = UrlHelper.calculateRequestUrl("getComments", localTreeMap, this.n);
       zz localzz = new zB().a(str).b();
       if (this.b.isEmpty()) {
         this.o.addLoadingYak();
       }
-      Im.a(true).a(localzz).a(new Ft(this, paramBoolean));
+      UrlHelper.a(true).a(localzz).a(new Ft(this, paramBoolean));
     }
   }
   
@@ -459,7 +459,7 @@ public class CommentFragment
             if (paramInt2 == 1)
             {
               a(paramIntent.getStringExtra("value"), 1);
-              ApplicationConfig.b(2);
+              ApplicationConfig.setMessageTrue(2);
               continue;
               if (paramInt2 == 1)
               {

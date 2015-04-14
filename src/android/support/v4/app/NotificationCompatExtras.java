@@ -10,8 +10,12 @@ public final class NotificationCompatExtras
   public static final String EXTRA_SORT_KEY = "android.support.sortKey";
 }
 
-
-/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
- * Qualified Name:     android.support.v4.app.NotificationCompatExtras
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+
+ * Qualified Name:     android.support.v4.app.NotificationCompatExtras
+
+ * JD-Core Version:    0.7.0.1
+
  */

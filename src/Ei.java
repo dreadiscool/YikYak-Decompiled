@@ -24,7 +24,7 @@ public class Ei
       {
         zC localzC = zC.a(null, this.b);
         zz localzz = new zB().b(localzC).a(this.c).b();
-        zF localzF = Im.a(false).a(localzz).a();
+        zF localzF = UrlHelper.a(false).a(localzz).a();
         if (!localzF.d()) {
           throw new IOException("Unexpected code " + localzF);
         }
@@ -62,8 +62,12 @@ public class Ei
   }
 }
 
-
-/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
- * Qualified Name:     Ei
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+
+ * Qualified Name:     Ei
+
+ * JD-Core Version:    0.7.0.1
+
  */

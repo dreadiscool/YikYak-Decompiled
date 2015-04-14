@@ -918,8 +918,12 @@ class GraphObjectAdapter<T extends GraphObject>
   void updateCheckboxState(CheckBox paramCheckBox, boolean paramBoolean) {}
 }
 
-
-/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
- * Qualified Name:     com.facebook.widget.GraphObjectAdapter
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+
+ * Qualified Name:     com.facebook.widget.GraphObjectAdapter
+
+ * JD-Core Version:    0.7.0.1
+
  */

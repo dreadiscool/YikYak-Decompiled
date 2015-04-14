@@ -25,7 +25,7 @@ public class Ce
   
   private void a(Context paramContext, zz paramzz, Class paramClass, Cj paramCj)
   {
-    Im.a(false).a(paramzz).a(new Cf(this, paramClass, new Handler(paramContext.getMainLooper()), paramCj, paramzz));
+    UrlHelper.a(false).a(paramzz).a(new Cf(this, paramClass, new Handler(paramContext.getMainLooper()), paramCj, paramzz));
   }
   
   public void a(Context paramContext, Cr paramCr, Cj paramCj)
@@ -54,8 +54,12 @@ public class Ce
   }
 }
 
-
-/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
- * Qualified Name:     Ce
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+
+ * Qualified Name:     Ce
+
+ * JD-Core Version:    0.7.0.1
+
  */

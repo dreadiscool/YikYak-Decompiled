@@ -130,9 +130,9 @@ public class CM
         localTreeMap.put("long", localYakkerLocation.getLongitude());
         localTreeMap.put("deviceID", e());
         localTreeMap.put("token", this.b);
-        String str2 = Im.a(CR.f(), "registerUser", localTreeMap, localYakkerLocation);
+        String str2 = UrlHelper.calculateRequestUrl(CR.f(), "registerUser", localTreeMap, localYakkerLocation);
         zz localzz = new zB().a(str2).b();
-        Im.a(true).a(localzz).a(new CP(this, paramCallback, str1));
+        UrlHelper.a(true).a(localzz).a(new CP(this, paramCallback, str1));
     }
     
     public void b(String paramString1, String paramString2)

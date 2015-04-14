@@ -116,7 +116,7 @@ public class CR
             Object[] arrayOfObject2 = new Object[1];
             arrayOfObject2[0] = "initializeEndPoints(JSONObject) succeeded.";
             Iq.a(CR.class, arrayOfObject2);
-            Im.a(f());
+            UrlHelper.a(f());
             return;
         }
         catch (Exception localException)
@@ -456,12 +456,12 @@ public class CR
                     if (str2.toUpperCase().startsWith("YS"))
                     {
                         YikYak.d = "d";
-                        YikYak.a = Ik.c(str2);
+                        YikYak.userIdIk.c(str2);
                     }
                     else if (str2.toUpperCase().startsWith("GQ"))
                     {
                         YikYak.d = str1;
-                        YikYak.a = Ik.c(str2);
+                        YikYak.userIdIk.c(str2);
                     }
                 }
             }
@@ -471,7 +471,7 @@ public class CR
                 localNameNotFoundException.printStackTrace();
                 return;
                 YikYak.d = str1;
-                YikYak.a = Ik.c(str2);
+                YikYak.userIdIk.c(str2);
             }
             catch (NoSuchAlgorithmException localNoSuchAlgorithmException)
             {

@@ -428,8 +428,12 @@ public class LikeView
   }
 }
 
-
-/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
- * Qualified Name:     com.facebook.widget.LikeView
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+
+ * Qualified Name:     com.facebook.widget.LikeView
+
+ * JD-Core Version:    0.7.0.1
+
  */

@@ -51,7 +51,7 @@ class CP
       break;
       label119:
       localMessage2.arg1 = -1;
-      ApplicationConfig.a("");
+      ApplicationConfig.setParseChannel("");
     }
   }
   

@@ -19,7 +19,7 @@ public class Fs
       If.a().b(false);
       if (CR.a("googleAnalytics", "PeekSaved", true))
       {
-        Im.a(true).a(null);
+        UrlHelper.a(true).a(null);
         If.a().b(false);
         this.b.a();
       }
@@ -27,8 +27,12 @@ public class Fs
   }
 }
 
-
-/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
- * Qualified Name:     Fs
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+
+ * Qualified Name:     Fs
+
+ * JD-Core Version:    0.7.0.1
+
  */

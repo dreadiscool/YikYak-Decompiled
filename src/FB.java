@@ -71,10 +71,10 @@ public class FB
           localTreeMap.put("email", str1);
           localTreeMap.put("category", str2);
           localTreeMap.put("message", str4);
-          String str5 = Im.b(CR.f(), "contactUs", localTreeMap, null);
+          String str5 = UrlHelper.b(CR.f(), "contactUs", localTreeMap, null);
           zC localzC = zC.a(zt.a("application/x-www-form-urlencoded"), (String)localTreeMap.get("RequestBody:body"));
           zz localzz = new zB().a(localzC).a(str5).b();
-          Im.a(true).a(localzz).a(new FE(this));
+          UrlHelper.a(true).a(localzz).a(new FE(this));
           Toast.makeText(this.c, "You have contacted Yik Yak", 1).show();
           getFragmentManager().popBackStackImmediate();
         }

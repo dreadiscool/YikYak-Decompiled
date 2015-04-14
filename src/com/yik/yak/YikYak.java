@@ -25,10 +25,10 @@ import java.net.CookieHandler;
 import java.net.CookieManager;
 
 @SuppressLint({"TrulyRandom"})
-public class YikYak
-    extends Application
+public class YikYak extends Application
 {
-    public static String a = "";
+    // String a
+    public static String userId = "";
     public static String b = "";
     public static String c = "";
     public static String d = "";

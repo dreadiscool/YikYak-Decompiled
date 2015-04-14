@@ -31,8 +31,12 @@ public class GraphObjectAdapter$SectionAndItem<T extends GraphObject>
   }
 }
 
-
-/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
- * Qualified Name:     com.facebook.widget.GraphObjectAdapter.SectionAndItem
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+
+ * Qualified Name:     com.facebook.widget.GraphObjectAdapter.SectionAndItem
+
+ * JD-Core Version:    0.7.0.1
+
  */

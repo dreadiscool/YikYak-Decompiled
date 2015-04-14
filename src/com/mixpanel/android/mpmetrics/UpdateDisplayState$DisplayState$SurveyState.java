@@ -94,8 +94,12 @@ public final class UpdateDisplayState$DisplayState$SurveyState
   }
 }
 
-
-/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
- * Qualified Name:     com.mixpanel.android.mpmetrics.UpdateDisplayState.DisplayState.SurveyState
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+
+ * Qualified Name:     com.mixpanel.android.mpmetrics.UpdateDisplayState.DisplayState.SurveyState
+
+ * JD-Core Version:    0.7.0.1
+
  */

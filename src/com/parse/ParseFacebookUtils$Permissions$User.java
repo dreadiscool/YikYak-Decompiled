@@ -27,8 +27,12 @@ public final class ParseFacebookUtils$Permissions$User
   public static final String WORK_HISTORY = "user_work_history";
 }
 
-
-/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
- * Qualified Name:     com.parse.ParseFacebookUtils.Permissions.User
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+
+ * Qualified Name:     com.parse.ParseFacebookUtils.Permissions.User
+
+ * JD-Core Version:    0.7.0.1
+
  */

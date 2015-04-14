@@ -4,74 +4,84 @@ import com.yik.yak.YikYak;
 
 public class ApplicationConfig
 {
-  private static SharedPreferences a;
+  private static SharedPreferences sharedPreferences;
   
-  public static String a(String paramString1, String paramString2)
+  // public static String a(String, String)
+  public static String getString(String paramString1, String paramString2)
   {
     return ApplicationConfig.getSharedPreferences().getString(paramString1, paramString2);
   }
   
-  public static void a(String paramString)
+  // public static void a(String)
+  public static void setYakkerId(String paramString)
   {
-    b("yakkerId", paramString);
+    ApplicationConfig.getPreferencesString("yakkerId", paramString);
   }
   
   // public static void a(boolean)
   public static void setAudibleNotifications(boolean paramBoolean)
   {
-    b("audibleNotifications", paramBoolean);
+    ApplicationConfig.getPreferencesBoolean("audibleNotifications", paramBoolean);
   }
   
   // public static boolean a()
   public static boolean getAudibleNotifications()
   {
-    return a("audibleNotifications", true);
+    return ApplicationConfig.getBoolean("audibleNotifications", true);
   }
   
-  public static boolean a(int paramInt)
+  // public static boolean a(int)
+  public static boolean hasReadMessage(int paramInt)
   {
-    return a("Message." + paramInt, false);
+    return ApplicationConfig.getBoolean("Message." + paramInt, false);
   }
   
-  public static boolean a(String paramString, boolean paramBoolean)
+  // public static boolean a(String, boolean)
+  public static boolean getBoolean(String option, boolean defaultResponse)
   {
-    return ApplicationConfig.getSharedPreferences().getBoolean(paramString, paramBoolean);
+    return ApplicationConfig.getSharedPreferences().getBoolean(option, defaultResponse);
   }
   
   // public static String b()
-  public static String getYakkerID()
+  public static String getYakkerId()
   {
-    return a("yakkerId", "");
+    return ApplicationConfig.getString("yakkerId", "");
   }
   
-  public static void b(int paramInt)
+  // public static void b(int)
+  public static void setMessageTrue(int paramInt)
   {
     b("Message." + paramInt, true);
   }
   
-  public static void b(String paramString)
+  // public static void b(String)
+  public static void setHandle(String paramString)
   {
-    b("handle", paramString);
+    ApplicationConfig.setPreferenceString("handle", paramString);
   }
   
-  public static void b(String paramString1, String paramString2)
+  // *public static void b(String, String)
+  public static void setPreferenceString(String paramString1, String paramString2)
   {
     ApplicationConfig.getSharedPreferences().edit().putString(paramString1, paramString2).commit();
   }
   
-  public static void b(String paramString, boolean paramBoolean)
+  // *public static void b(String, boolean)
+  public static void setPreferenceBoolean(String paramString, boolean paramBoolean)
   {
     ApplicationConfig.getSharedPreferences().edit().putBoolean(paramString, paramBoolean).commit();
   }
   
-  public static void b(boolean paramBoolean)
+  // *public static void b(boolean)
+  public static void setChannelStatus(boolean paramBoolean)
   {
-    b("isChannelSet", paramBoolean);
+    ApplicationConfig.setPreferenceBoolean("isChannelSet", paramBoolean);
   }
   
-  public static void c(String paramString)
+  // *public static void c(String)
+  public static void setKarmaLevel(String paramString)
   {
-    b("karma", paramString);
+    ApplicationConfig.setPreferenceBoolean("karma", paramString);
     If.a().a(Integer.parseInt(paramString));
   }
   
@@ -80,66 +90,70 @@ public class ApplicationConfig
     b(5);
   }
   
-  public static boolean c()
+  // *public static boolean c()
+  public static boolean isChannelSet()
   {
-    return a("isChannelSet", false);
+    return ApplicationConfig.getBoolean("isChannelSet", false);
   }
   
-  public static String d()
+  // *public static String d()
+  public static String getOptionHandle()
   {
-    return a("handle", "");
+    return ApplicationConfig.getString("handle", "");
   }
   
-  public static void d(String paramString)
+  // *public static void d(String)
+  public static void setAccessPin(String paramString)
   {
-    b("pin", paramString);
+    ApplicationConfig.setPreferenceString("pin", paramString);
   }
   
-  public static void d(boolean paramBoolean)
+  // *public static void d(boolean)
+  public static void setPushNotificationsEnabled(boolean paramBoolean)
   {
-    b("pushNotificationsEnabled", paramBoolean);
+    ApplicationConfig.setPreferenceBoolean("pushNotificationsEnabled", paramBoolean);
   }
   
-  public static String e()
+  // *public static void e()
+  public static String setKarmaTo100()
   {
-    return a("karma", "100");
+    return ApplicationConfig.getString("karma", "100");
   }
   
-  public static void e(String paramString)
+  // *public static void e(String)
+  public static void setVotingLayout(String paramString)
   {
-    b("votingLayout", paramString);
+    ApplicationConfig.setPreferenceString("votingLayout", paramString);
   }
   
-  public static void e(boolean paramBoolean)
+  // *public static void e(boolean)
+  public static void setSecureYakStatus(boolean paramBoolean)
   {
-    b("secureMyYaks", paramBoolean);
+    ApplicationConfig.setPreferenceBoolean("secureMyYaks", paramBoolean);
   }
   
-  public static int f()
+  // *public static int f()
+  public static int getYakkerKarma()
   {
+    int i = 100;
     try
     {
-      int j = Integer.valueOf(a("karma", "100")).intValue();
-      i = j;
+      i = Integer.valueOf(ApplicationConfig.getString("karma", "100")).intValue();
     }
-    catch (Exception localException)
-    {
-      for (;;)
-      {
-        int i = 100;
-      }
-    }
+    catch (Exception localException) { }
     return i;
   }
   
-  public static void f(boolean paramBoolean)
+  // *public static void f(boolean)
+  public static void setShowUnreadNotificationsOnly(boolean paramBoolean)
   {
-    b("showUnreadNotificationsOnly", paramBoolean);
+    ApplicationConfig.setPreferenceBoolean("showUnreadNotificationsOnly", paramBoolean);
   }
   
-  public static void g(boolean paramBoolean)
+  // *public static void g(boolean)
+  public static void setDoubleTapToVote(boolean paramBoolean)
   {
-    b("doubleTapToVote", paramBoolean);
+    ApplicationConfig.setPreferenceBoolean("doubleTapToVote", paramBoolean);
   }
   
   public static boolean g()
@@ -147,54 +161,62 @@ public class ApplicationConfig
     return a(5);
   }
   
-  public static String h()
+  // *public static String h()
+  public static String getAccessPin()
   {
-    return a("pin", "");
+    return ApplicationConfig.getString("pin", "");
   }
   
-  public static void h(boolean paramBoolean)
+  // *public static void h(boolean)
+  public static void setUseAnalytics(boolean paramBoolean)
   {
-    b("analytics", paramBoolean);
+    ApplicationConfig.setPreferenceBoolean("analytics", paramBoolean);
   }
   
-  public static boolean i()
+  // *public static boolean i()
+  public static boolean getPushNotificationsEnabled()
   {
-    return a("pushNotificationsEnabled", true);
+    return ApplicationConfig.getBoolean("pushNotificationsEnabled", true);
   }
   
-  public static boolean j()
+  // *public static boolean j()
+  public static boolean getSecureYakStatus()
   {
-    return a("secureMyYaks", false);
+    return ApplicationConfig.getBoolean("secureMyYaks", false);
   }
   
-  public static boolean k()
+  // *public static boolean k()
+  public static boolean getShowUnreadNotificationsOnly()
   {
-    return a("showUnreadNotificationsOnly", false);
+    return ApplicationConfig.getBoolean("showUnreadNotificationsOnly", false);
   }
   
-  public static boolean l()
+  // *public static boolean l()
+  public static boolean getDoubleTapToVote()
   {
-    return a("doubleTapToVote", true);
+    return ApplicationConfig.getBoolean("doubleTapToVote", true);
   }
   
-  public static String m()
+  // *public static String m()
+  public static String getVotingLayout()
   {
-    return a("votingLayout", "right");
+    return ApplicationConfig.getString("votingLayout", "right");
   }
   
-  public static boolean n()
+  // *public static boolean n()
+  public static boolean getUseAnalytics()
   {
-    return a("analytics", true);
+    return ApplicationConfig.getBoolean("analytics", true);
   }
   
   // public static SharedPreferences o()
   public static SharedPreferences getSharedPreferences()
   {
-    if (a == null)
+    if (sharedPreferences == null)
     {
-      a = YikYak.getInstance().getSharedPreferences("YikYak", 0);
+      sharedPreferences = YikYak.getInstance().getSharedPreferences("YikYak", 0);
       if (b().isEmpty()) {
-        a = YikYak.getInstance().getSharedPreferences("com.yik.yak_preferences", 0);
+        sharedPreferences = YikYak.getInstance().getSharedPreferences("com.yik.yak_preferences", 0);
       }
     }
     return a;

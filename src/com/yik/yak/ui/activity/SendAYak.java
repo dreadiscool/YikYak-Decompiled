@@ -188,11 +188,11 @@ public class SendAYak
       if ((this.d) && (!Ik.a(str2))) {
         localTreeMap.put("hndl", str2);
       }
-      ApplicationConfig.b(str2);
-      String str3 = Im.b(CR.f(), "submitPeekMessage", localTreeMap, null);
+      ApplicationConfig.setHandle(str2);
+      String str3 = UrlHelper.b(CR.f(), "submitPeekMessage", localTreeMap, null);
       zC localzC = zC.a(zt.a("application/x-www-form-urlencoded"), (String)localTreeMap.get("RequestBody:body"));
       zz localzz = new zB().a(localzC).a(str3).b();
-      Im.a(true).a(localzz).a(new DX(this));
+      UrlHelper.a(true).a(localzz).a(new DX(this));
     }
   }
   
@@ -251,7 +251,7 @@ public class SendAYak
     String str1 = CR.a("images", "s3Url", CR.l());
     String str2 = str1 + "?s3_object_name=" + paramString;
     zz localzz = new zB().a(str2).b();
-    Im.a(true).a(localzz).a(new Ed(this, paramString));
+    UrlHelper.a(true).a(localzz).a(new Ed(this, paramString));
   }
   
   private void b(String paramString, int paramInt)
@@ -262,7 +262,7 @@ public class SendAYak
     if ((this.d) && (!Ik.a(str1))) {
       localTreeMap.put("hndl", str1);
     }
-    ApplicationConfig.b(str1);
+    ApplicationConfig.setHandle(str1);
     YakkerLocation localYakkerLocation = this.m.f();
     localTreeMap.put("userID", ApplicationConfig.getYakkerID());
     localTreeMap.put("lat", localYakkerLocation.getLatitude());
@@ -275,10 +275,10 @@ public class SendAYak
       localTreeMap.put("pID", this.k);
     }
     String str2 = CK.a(i1);
-    String str3 = Im.b(CR.f(), "sendMessage", localTreeMap, null);
+    String str3 = UrlHelper.b(CR.f(), "sendMessage", localTreeMap, null);
     zC localzC = zC.a(zt.a("application/x-www-form-urlencoded"), (String)localTreeMap.get("RequestBody:body"));
     zz localzz = new zB().a(localzC).a(str3).b();
-    Im.a(true).a(localzz).a(new Ea(this, str2));
+    UrlHelper.a(true).a(localzz).a(new Ea(this, str2));
   }
   
   private void c()
@@ -489,7 +489,7 @@ public class SendAYak
         default: 
           break;
         case 1: 
-          ApplicationConfig.b(2);
+          ApplicationConfig.setMessageTrue(2);
           this.c = true;
           if (this.b) {
             a(paramIntent.getStringExtra("value"), 1);

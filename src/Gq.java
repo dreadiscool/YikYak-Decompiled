@@ -37,9 +37,9 @@ public class Gq
     for (;;)
     {
       this.i = false;
-      String str2 = Im.a(str1, localTreeMap, localYakkerLocation);
+      String str2 = UrlHelper.calculateRequestUrl(str1, localTreeMap, localYakkerLocation);
       zz localzz = new zB().a(str2).b();
-      Im.a(true).a(localzz).a(new Gr(this, localFragmentActivity));
+      UrlHelper.a(true).a(localzz).a(new Gr(this, localFragmentActivity));
       return;
       str1 = "getMyRecentReplies";
       this.l = new ArrayList();

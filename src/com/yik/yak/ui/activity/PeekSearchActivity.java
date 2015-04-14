@@ -457,10 +457,10 @@ public class PeekSearchActivity
     localTreeMap.put("userID", ApplicationConfig.getYakkerID());
     localTreeMap.put("lat", paramYakkerLocation.getLatitudeString());
     localTreeMap.put("long", paramYakkerLocation.getLongitud());
-    String str = Im.a("getMessages", localTreeMap, localYakkerLocation);
+    String str = UrlHelper.calculateRequestUrl("getMessages", localTreeMap, localYakkerLocation);
     this.d = new ArrayList();
     zz localzz = new zB().a(str).b();
-    Im.a(true).a(localzz).a(new Dt(this));
+    UrlHelper.a(true).a(localzz).a(new Dt(this));
   }
   
   public void onActivityResult(int paramInt1, int paramInt2, Intent paramIntent)

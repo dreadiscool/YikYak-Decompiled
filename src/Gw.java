@@ -49,9 +49,9 @@ public class Gw
     for (;;)
     {
       this.i = false;
-      String str3 = Im.a(str2, localTreeMap, localYakkerLocation1);
+      String str3 = UrlHelper.calculateRequestUrl(str2, localTreeMap, localYakkerLocation1);
       zz localzz = new zB().a(str3).b();
-      Im.a(true).a(localzz).a(new Gx(this, localFragmentActivity, str1));
+      UrlHelper.a(true).a(localzz).a(new Gx(this, localFragmentActivity, str1));
       return;
       str2 = "yaks";
       this.l = new ArrayList();

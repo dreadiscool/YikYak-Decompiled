@@ -157,7 +157,7 @@ public class GI
     Switch localSwitch6 = (Switch)this.b.findViewById(2131558718);
     localSwitch6.setEnabled(BV.i());
     localSwitch6.setChecked(BV.a());
-    localSwitch6.setOnCheckedChangeListener(new GR(this));
+    localSwitch6.setOnCheckedChangeListener(new NotificationSoundListener(this));
     ((TextView)this.b.findViewById(2131558734)).setText("Version: " + YikYak.getVersion());
     b(BV.m());
     return this.b;

@@ -46,9 +46,9 @@ public class FR
     for (;;)
     {
       this.i = false;
-      String str2 = Im.a(str1, localTreeMap, localYakkerLocation);
+      String str2 = UrlHelper.calculateRequestUrl(str1, localTreeMap, localYakkerLocation);
       zz localzz = new zB().a(str2).b();
-      Im.a(true).a(localzz).a(new FS(this, localYakkerLocation, localCM, localFragmentActivity));
+      UrlHelper.a(true).a(localzz).a(new FS(this, localYakkerLocation, localCM, localFragmentActivity));
       return;
       str1 = "getMessages";
       this.l = new ArrayList();

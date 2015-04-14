@@ -19,7 +19,7 @@ public final class BW
     }
     for (;;)
     {
-      ApplicationConfig.b(bool1);
+      ApplicationConfig.setChannelStatus(bool1);
       return;
       bool2 = false;
       break;
