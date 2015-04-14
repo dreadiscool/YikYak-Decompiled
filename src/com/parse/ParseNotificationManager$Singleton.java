@@ -1,0 +1,12 @@
+package com.parse;
+
+public class ParseNotificationManager$Singleton
+{
+  private static final ParseNotificationManager INSTANCE = new ParseNotificationManager();
+}
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+ * Qualified Name:     com.parse.ParseNotificationManager.Singleton
+ * JD-Core Version:    0.7.0.1
+ */

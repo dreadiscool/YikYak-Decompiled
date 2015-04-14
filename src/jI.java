@@ -1,0 +1,12 @@
+import com.google.android.gms.maps.model.LatLng;
+
+public abstract interface jI
+{
+  public abstract void a(LatLng paramLatLng);
+}
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+ * Qualified Name:     jI
+ * JD-Core Version:    0.7.0.1
+ */

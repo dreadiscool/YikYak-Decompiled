@@ -1,0 +1,11 @@
+class on
+  implements nI
+{
+  on(om paramom) {}
+}
+
+
+/* Location:           C:\Users\dreadiscool\Desktop\tools\classes-dex2jar.jar
+ * Qualified Name:     on
+ * JD-Core Version:    0.7.0.1
+ */
