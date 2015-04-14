@@ -1,0 +1,1 @@
+This is a repository containing decompiled and (within my best judgement) deobfuscated code from YikYak. This is still a new project, so I only have a fraction of the code deobfuscated. I'll get there (eventually)!
